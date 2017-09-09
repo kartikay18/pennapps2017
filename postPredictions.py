@@ -6,7 +6,7 @@ url = 'https://data.chastiser11.hasura-app.io/v1/query'
 symbol = "GOOGL"
 market = "NASDAQ"
 numDays = "3"
-predictions = [234, 450, 390] 
+predictions = [234, 450, 390, 450] 
 
 payload = {"type": "insert", "args":{"table": "stockforecast", "objects": [{"stocksymbol": symbol, "market": market, "period": numDays, "predictions": results }]}}
 headers = {"content-type": "application/json", "authorization": "Bearer wj7fmf21w6lvu0l4u7vmdef1tqo0cykn"}
